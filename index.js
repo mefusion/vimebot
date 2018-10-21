@@ -144,14 +144,14 @@ VimeWorld:\n
             .setFooter("Игроков в лобби: " + s.lobby);
             message.channel.send(online);
             break;
-        case "test":
+        case "invite":
             const variants = [
-                "Бот работает, всё хорошо :ok_hand: !",
-                "Что ты пишешь, я работаю.",
-                ":skull: , ха шутка, всё хорошо",
-                "**ERROR №505 BAD GATEWAY**, ха я опять пошутил.",
-                "Эта команда работает, прикиньте!",
-                "Хромосомы мутятся, бот крутится",
+                "Бери: https://discordapp.com/api/oauth2/authorize?client_id=455673715242303499&permissions=2048&scope=bot !",
+                "Лови: https://discordapp.com/api/oauth2/authorize?client_id=455673715242303499&permissions=2048&scope=bot",
+                "Дарю :gift:: https://discordapp.com/api/oauth2/authorize?client_id=455673715242303499&permissions=2048&scope=bot",
+                "**ERROR №505 BAD GATEWAY**, ха шутка, бери: https://discordapp.com/api/oauth2/authorize?client_id=455673715242303499&permissions=2048&scope=bot.",
+                "Ничего не дам",
+                "Чо нада ?",
                 "로봇 은 잘 작동합니다!"
 
             ];
