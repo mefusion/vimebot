@@ -82,9 +82,8 @@ VimeWorld:\n
         //Команда информации
         case "info":
             message.channel.send(`
-\`\`\`Реанимирован Ютей.\n
-Сайт админа:http://yttttyy.com/\n
-Дискорд сервер моего админа: https://discord.gg/yVgrUbr\`\`\``);
+\`\`\`Сделан <@396921754536247306> для Юти\n
+Сайт Юти:http://yttttyy.com/\n\`\`\``);
             break;
         case "server":
             message.channel.send("Информация о сервере " + server.name + "\nID: " + server.id + "\nУчастников сервера: " + message.guild.memberCount);
