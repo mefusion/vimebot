@@ -13,7 +13,7 @@ var server = {
 }
 
 //Авторизация бота через аккаунт
-Bot.login("NU4DvK5N-nkajeZpDqfvz9MECFyAo3AC");
+Bot.login("X6h8-Hs6p3C1uYHxUU6igxb9FhUOGj4e");
 
 //Cобытие начала бота
 Bot.on('ready', () => {
