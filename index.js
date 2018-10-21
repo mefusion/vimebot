@@ -22,7 +22,7 @@ Bot.on('ready', () => {
         servs += 1;
     }
 	//Установка статуса бота
-    Bot.user.setActivity(';help/;info', {type: "STREAMING"});
+    Bot.user.setActivity('!help/!info', {type: "STREAMING"});
     //Лог в консоль о работе бота
     console.log('Bot started successful');
 });
@@ -82,8 +82,8 @@ VimeWorld:\n
         //Команда информации
         case "info":
             message.channel.send(`
-\`Сделан ПхпМастером для Юти\n
-Сайт Юти: http://yttttyy.com/\n\`\);
+\`\`Сделан Пхпмастером, для Юти.\n
+Дискорд сервер Юти: https://discord.gg/FZHzzj4\`\``);
             break;
         case "server":
             message.channel.send("Информация о сервере " + server.name + "\nID: " + server.id + "\nУчастников сервера: " + message.guild.memberCount);
@@ -189,7 +189,7 @@ VimeWorld:\n
         for(i in data.perks) {
             perks += data.perks[i].name + ": " + data.perks[i].level + ", ";
         }
-        message.channel.send("Название: `" + data.name + "`\nУровень: " + data.level + "\n\nПрокачка: \n\n" + perks + "\n\nТег: " + (data.tag ? data.tag : "Отсутствует") + "\nЦвет тега: " + (data.tag ? data.color : "Тег отсутствует") + "\n\nИгроков всего: " + data.members.length + ")");
+        message.channel.send("Название: `" + data.name + "`\nУровень: " + data.level + "\n\nПрокачка: \n\n" + perks + "\n\nТег: " + (data.tag ? data.tag : "Отсутствует") + "\nЦвет тега: " + (data.tag ? data.color : "Тег отсутствует") + "\n\nИгроков всего: " + data.members.length + ".");
     }
     else if (msg.startsWith('leaderboard')) {
         args[1] = args.splice(1).join(' ');
