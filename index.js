@@ -41,10 +41,10 @@ Bot.on('message', async (message) => {
     server.id = message.guild.id;
     if (!config[server.id]) {
         config[server.id] = new Object;
-        config[server.id].prefix = ";";
+        config[server.id].prefix = "!";
         config[server.id].botchannel = "*";
         fs.writeFileSync('configs.json', JSON.stringify(config));
-        message.channel.send("Похоже, этого бота ранее не было на вашем сервере. Были установлены параметры по умолчанию. Для помощи - ;help");
+        message.channel.send("Похоже, этого бота ранее не было на вашем сервере. Были установлены параметры по умолчанию. Для помощи - !help");
     }
     //Создание переменных команды и аргументов команды
     var prefix = config[server.id].prefix;
