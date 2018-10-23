@@ -83,7 +83,7 @@ VimeWorld:\n
         case "info":
             message.channel.send(`
 \`\`Сделан Пхпмастером, для Юти.\n
-Дискорд сервер Юти: https://discord.gg/FZHzzj4\`\``);
+Я робот, у меня нет эмоций :robot:.\`\``);
             break;
         case "server":
             message.channel.send("Информация о сервере " + server.name + "\nID: " + server.id + "\nУчастников сервера: " + message.guild.memberCount);
