@@ -83,7 +83,7 @@ VimeWorld:\n
         case "info":
             message.channel.send(`
 \`\`Сделан Пхпмастером, для Юти.\n
-Я робот, у меня нет эмоций :robot:.\`\``);
+Я робот, у меня нет эмоций.\`\``);
             break;
         case "server":
             message.channel.send("Информация о сервере " + server.name + "\nID: " + server.id + "\nУчастников сервера: " + message.guild.memberCount);
