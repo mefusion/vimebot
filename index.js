@@ -24,7 +24,7 @@ Bot.on("ready", () => {
     servs += 1;
   }
   //Установка статуса бота
-  Bot.user.setActivity("!help/!info", { type: "STREAMING" });
+  Bot.user.setActivity("v!help/v!info", { type: "PLAYING" });
   //Лог в консоль о работе бота
   console.log("[INFO] Bot started successfully");
 });
@@ -48,11 +48,11 @@ Bot.on("message", async (message) => {
   server.id = message.guild.id;
   if (!config[server.id]) {
     config[server.id] = new Object();
-    config[server.id].prefix = "!";
+    config[server.id].prefix = "v!";
     config[server.id].botchannel = "*";
     fs.writeFileSync("configs.json", JSON.stringify(config));
     message.channel.send(
-      "Похоже, этого бота ранее не было на вашем сервере. Были установлены параметры по умолчанию. Для помощи - !help"
+      "Похоже, этого бота ранее не было на вашем сервере. Были установлены параметры по умолчанию. Для помощи - v!help"
     );
   }
   //Создание переменных команды и аргументов команды
@@ -287,8 +287,7 @@ VimeWorld:\n
     );
   } else if (msg.startsWith("prefix")) {
     if (
-      !message.member.hasPermission("ADMINISTRATOR") &&
-      message.author.id != 396921754536247306
+      !message.member.hasPermission("ADMINISTRATOR")
     )
       return message.reply(
         "У вас недостаточно прав для совершения этого действия!"
